@@ -1,4 +1,4 @@
-@import url('static/css/inter.css');
+@import url('../build/static/css/inter.css');
 
 * {
   box-sizing: border-box;
