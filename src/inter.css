@@ -16,14 +16,14 @@ Usage example:
     font-style: normal;
     font-weight: 100 900;
     font-display: swap;
-    src: url('font-files/InterVariable.woff2?v=4.1') format('woff2');
+    src: url('font-files/InterVariable.woff2') format('woff2');
   }
   @font-face {
     font-family: InterVariable;
     font-style: italic;
     font-weight: 100 900;
     font-display: swap;
-    src: url('font-files/InterVariable-Italic.woff2?v=4.1') format('woff2');
+    src: url('font-files/InterVariable-Italic.woff2') format('woff2');
   }
   /* legacy name "Inter var" (Oct 2023) */
   @font-face { font-family:'Inter var'; font-style:normal; font-weight:100 900; font-display:swap; src: url('font-files/InterVariable.woff2?v=4.1') format('woff2'); }
