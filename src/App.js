@@ -1,14 +1,14 @@
 // https://cydstumpel.nl/
-import React from 'react';
-import * as THREE from 'three'
+import React, { useEffect } from 'react';
+import * as THREE from 'three';
 import { useRef, useState } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { Image, Environment, ScrollControls, useScroll, useTexture } from '@react-three/drei'
+import { Canvas, useFrame, useThree } from '@react-three/fiber'
+import { Image, ScrollControls, useScroll, useTexture } from '@react-three/drei'
 import { easing } from 'maath'
 import './util'
 
 export const App = () => (
-  <Canvas camera={{ position: [0, 0, 100], fov: 15 }}>
+  <Canvas camera={{ position: [0, 0, 100], fov: 15 }} style={{ background: 'linear-gradient(to bottom right, #AC9BC0, #A2879F)' }}> {/* 移除 style 中的 background */}
     <fog attach="fog" args={['#a79', 8.5, 12]} />
     <ScrollControls pages={4} infinite>
       <Rig rotation={[0, 0, 0.15]}>
@@ -16,7 +16,6 @@ export const App = () => (
       </Rig>
       <Banner position={[0, -0.15, 0]} />
     </ScrollControls>
-    <Environment preset="dawn" background blur={0.5} />
   </Canvas>
 )
 
